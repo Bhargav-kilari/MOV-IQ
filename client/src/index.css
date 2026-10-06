@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-bg: #ffffff;
+    --color-surface: #ffffff;
+    --color-surface-subtle: #f9fafb;
+    --color-surface-hover: #f3f4f6;
+    --color-text-primary: #111111;
+    --color-text-secondary: #6b7280;
+    --color-text-muted: #9ca3af;
+    --color-border: #e5e7eb;
+    --color-border-subtle: #f3f4f6;
+    --color-primary: #111111;
+    --color-primary-hover: #000000;
+    --color-primary-text: #ffffff;
+    --color-success: #10b981;
+    --color-warning: #f59e0b;
+    --color-error: #ef4444;
+  }
+
+  body {
+    @apply bg-white text-[#111111] min-h-screen antialiased;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    letter-spacing: -0.01em;
+    color-scheme: light;
+  }
+
+  /* Numeric Tabular figures for weights, reps, timers */
+  .font-tabular {
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* Clean number inputs */
+  input[type='number']::-webkit-inner-spin-button,
+  input[type='number']::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  input[type='number'] {
+    -moz-appearance: textfield;
+  }
+}
+
+/* Custom Minimalist Light Scrollbars */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d1d5db;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #9ca3af;
+}
+
+/* Mobile Safe Area */
+.pb-safe {
+  padding-bottom: calc(env(safe-area-inset-bottom, 0px) + 4.5rem);
+}

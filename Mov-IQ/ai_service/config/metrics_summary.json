@@ -1,0 +1,30 @@
+{
+  "selected_fold": "fold_2",
+  "best_validation_metrics": {
+    "best_epoch": 12,
+    "composite_score": 0.3937830687830688,
+    "ex_acc": 0.42857142857142855,
+    "ex_f1": 0.13756613756613756,
+    "form_acc": 0.7142857142857143,
+    "form_f1": 0.65,
+    "val_loss": 5.494476931435721
+  },
+  "exercise_classes": [
+    "bench_press",
+    "bicep_curl",
+    "cable_fly",
+    "cable_row",
+    "chest_press",
+    "incline_chest_press",
+    "lat_pulldown",
+    "lateral_raise",
+    "pec_deck_fly",
+    "rear_delt_fly",
+    "shoulder_press",
+    "squat"
+  ],
+  "form_classes": [
+    "proper_form",
+    "incorrect_form"
+  ]
+}

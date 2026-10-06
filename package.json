@@ -1,0 +1,20 @@
+{
+  "name": "fitness-app-monorepo",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Full-stack fitness application inspired by modern workout-tracking apps (e.g. Hevy)",
+  "private": true,
+  "scripts": {
+    "dev": "npm run dev --prefix server",
+    "dev:server": "npm run dev --prefix server",
+    "dev:client": "npm run dev --prefix client",
+    "ai:service": "python Mov-IQ/ai_service/server.py --port 8000",
+    "db:setup": "node database/setup.js",
+    "install:all": "npm install && npm install --prefix server && npm install --prefix client",
+    "build": "npm run build --prefix client"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "pg": "^8.13.1"
+  }
+}

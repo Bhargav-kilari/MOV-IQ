@@ -1,0 +1,11 @@
+{
+  "input_dim": 312,
+  "num_classes": 12,
+  "projection_dim": 128,
+  "hidden_dim": 128,
+  "num_layers": 2,
+  "bidirectional": true,
+  "dropout": 0.3,
+  "pooling": "mean",
+  "rnn_type": "bilstm"
+}
